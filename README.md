@@ -1,4 +1,4 @@
-\# 箭箭惊心 (Archery Game)
+# 箭箭惊心 (Archery Game)
 
 
 
@@ -26,3 +26,8 @@ docker build -t archery-game .
 
 docker run -d --name archery -p 8080:5143 archery-game
 
+# 构建符合标注规范的镜像
+docker build -t archery-game-annotation .
+
+# 运行容器
+docker run -d --name my-archery -p 8080:80 archery-game-annotation
